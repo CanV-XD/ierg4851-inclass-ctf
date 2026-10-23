@@ -1,6 +1,6 @@
 from pwn import *
 
-p = remote('47.83.170.192', 32806)
+p = remote('<host-ip>', port)
 
 win = 0x401196
 offset = 72
